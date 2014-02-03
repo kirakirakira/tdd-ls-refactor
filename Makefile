@@ -42,7 +42,8 @@ TEST_SRC_DIRS += \
 INCLUDE_DIRS += \
 	$(SRC_DIRS) \
 	$(TEST_SRC_DIRS) \
-	$(CPPUTEST_HOME)/include
+	$(CPPUTEST_HOME)/include \
+	Testing/Utilities
 
 # Defer to CppUTest's build system to finish build
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
