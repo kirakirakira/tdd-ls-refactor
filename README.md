@@ -7,8 +7,8 @@ This linked list is unique in that the client (the code that wants to add to the
 
 A basic header file, an empty source file, and a test file have been provided for you:
 
-/Source/LinkedList.h -> Provided header file (incomplete)
-/Source/LinkedList.c -> Provided source file (empty)
-/Testing/Tests/LinkedList_Test.cpp -> Starter tests and first failing test
+* /Source/LinkedList.h -> Provided header file (incomplete)
+* /Source/LinkedList.c -> Provided source file (empty)
+* /Testing/Tests/LinkedList_Test.cpp -> Starter tests and first failing test
 
 You will need to edit all of these files to complete the exercise.  To make it easier to get started there are some tests provided that are commented out.  You should un-comment (and complete) these tests one-by-one to finish most of the exercise, but these tests are not sufficient and you should write more if you have time.
