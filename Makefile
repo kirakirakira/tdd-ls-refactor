@@ -34,10 +34,11 @@ CPPUTEST_LDFLAGS += -fprofile-arcs
 SRC_FILES += \
 
 SRC_DIRS += \
-	Source/
+	Source
 
 TEST_SRC_DIRS += \
-	Testing/Tests/
+	Testing/Tests \
+	Testing/Mocks
 
 INCLUDE_DIRS += \
 	$(SRC_DIRS) \
