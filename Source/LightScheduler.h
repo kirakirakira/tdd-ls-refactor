@@ -20,13 +20,18 @@
 
 typedef struct
 {
-   int dummy;
-   // TODO need to add data required to store a schedule
+   uint8_t id;
+   bool st;
+   bool use;
+   TimeSourceTickCount_t t;
 } Schedule_t;
 
 typedef struct
 {
-   Schedule_t schedules[MAX_SCHEDULES];
+   Schedule_t sch[MAX_SCHEDULES];
+   I_DigitalOutputGroup_t *light;
+   I_TimeSource_t *ts;
+   uint8_t schCnt;
 } LightScheduler_t;
 
 /*!
@@ -47,6 +52,16 @@ void LightScheduler_Init(LightScheduler_t *instance, I_DigitalOutputGroup_t *lig
  *    The lightState should be written to the light with lightId at this time.
  */
 void LightScheduler_AddSchedule(LightScheduler_t *instance, uint8_t lightId, bool lightState, TimeSourceTickCount_t time);
+
+/*!
+ * Un-schedule a light to be turned on/off.
+ * @param instance The light scheduler.
+ * @param lightId The light ID that is scheduled to be controlled by the scheduler.
+ * @param lightState The state that is scheduled be written for the light (on/off).
+ * @param time The light will is scheduled to be controlled when the time from the TimeSource reaches
+ *    this value.  The lightState should be written to the light with lightId at this time.
+ */
+void LightScheduler_RemoveSchedule(LightScheduler_t *instance, uint8_t lightId, bool lightState, TimeSourceTickCount_t time);
 
 /*!
  * Run a light scheduler.  The light scheduler will run all schedules that are due.

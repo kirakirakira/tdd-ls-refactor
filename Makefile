@@ -3,7 +3,7 @@ SILENCE ?= @
 
 PROJECT_HOME_DIR ?= .
 
-PROJECT_NAME ?= tdd_linked_list
+PROJECT_NAME ?= tdd_light_scheduler_refactor
 COMPONENT_NAME ?= $(PROJECT_NAME)
 
 TESTING_DIR ?= $(PROJECT_HOME_DIR)/Testing
@@ -38,6 +38,8 @@ SRC_DIRS += \
 
 TEST_SRC_DIRS += \
 	Testing/Tests \
+	Testing/Utilities \
+	Testing/Doubles \
 	Testing/Mocks
 
 INCLUDE_DIRS += \
