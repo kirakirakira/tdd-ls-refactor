@@ -1,6 +1,6 @@
 /*!
  * @file
- * @brief User-defined assert mechanism
+ * @brief User-defined assert mechanism.
  */
 
 #ifndef UASSERT_TEST_H
