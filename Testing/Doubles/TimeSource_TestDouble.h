@@ -1,8 +1,6 @@
 /*!
  * @file
  * @brief Time source that allows manual control of the time.
- *
- * Copyright (c) 2013 - General Electric - All rights reserved.
  */
 
 #ifndef TIMESOURCE_TESTDOUBLE_H
