@@ -1,12 +1,10 @@
 /*!
  * @file
  * @brief User-defined assert mechanism
- *
- * Copyright (c) 2013 - General Electric - All rights reserved.
  */
 
-#ifndef UASSERT_H_
-#define UASSERT_H_
+#ifndef UASSERT_H
+#define UASSERT_H
 
 #include <stdbool.h>
 
