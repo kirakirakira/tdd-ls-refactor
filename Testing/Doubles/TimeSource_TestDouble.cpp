@@ -1,8 +1,6 @@
 /*!
  * @file
  * @brief Implementation of time source test double.
- *
- * Copyright (c) 2013 - General Electric - All rights reserved.
  */
 
 #include "TimeSource_TestDouble.h"
