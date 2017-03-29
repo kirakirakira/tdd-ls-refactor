@@ -1,8 +1,6 @@
 /*!
  * @file
  * @brief Simple mock of a time source object, used for testing.
- *
- * Copyright (c) 2013 - General Electric - All rights reserved.
  */
 
 #ifndef TIMESOURCE_MOCK_H_
